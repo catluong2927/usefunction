@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lowupercase</title>
+</head>
+<body>
+<script>
+    let chuoi = prompt("nhập chuỗi muốn đổi:");
+    let hoa = "ABCDEFGHIJKLMNOPQRSTUVWSYZ";
+    let thuong = "abcdefghijklmnopqrstuvwsyz";
+    let chuoinew = [];
+    for (let i = 0; i < chuoi.length; i++) {
+        if (hoa.indexOf(chuoi[i]) != -1)
+            chuoinew.push(chuoi[i].toLowerCase());
+        else {
+            if (thuong.indexOf(chuoi[i]) != -1)
+                chuoinew.push(chuoi[i].toUpperCase());
+            else {
+                chuoinew.push(chuoi[i]);
+            }
+        }
+    }
+    alert(chuoinew.join(""));
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADDSYMBOL</title>
+</head>
+<body>
+<script>
+    let a= prompt("nhâp số: ");
+    let b = [];
+    for(let i=0;i<a.length;i++){
+        if(parseInt(a[i-1])%2==0 && parseInt(a[i])%2==0) {
+            // a[i] = a[i]+"-";
+            b.push("-", a[i]);
+        }else{
+            b.push(a[i]);
+        }
+    }
+    alert(b.join(""));
+</script>
+</body>
+</html>
